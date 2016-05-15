@@ -2,3 +2,5 @@ li
   .row
     .col-xs-3 = server.title
     .col-xs-3 = server.ip_address
+  ul.list-unstyled
+    = render server.server_users
