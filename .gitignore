@@ -19,3 +19,5 @@ log
 .project
 /config/database.yml
 test
+
+coverage
