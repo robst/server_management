@@ -1,6 +1,4 @@
 require 'simplecov'
-require 'factory_girl_rails'
-require 'shoulda/matchers'
 SimpleCov.start do
   add_filter "/spec/"
   add_filter "/config/"
