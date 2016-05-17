@@ -2,6 +2,6 @@ FactoryGirl.define do
   factory :server_user do
     name "MyString"
     password "MyString"
-    server nil
+    association :server, factory: :server, strategy: :build
   end
 end

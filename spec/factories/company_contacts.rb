@@ -3,6 +3,6 @@ FactoryGirl.define do
     name "MyString"
     telefonnumber "MyString"
     mail "MyString"
-    company nil
+    association :company, factory: :company, strategy: :build
   end
 end
