@@ -1,4 +1,6 @@
 class Server < ActiveRecord::Base
+  include Searchable
+
   belongs_to :company
 
   has_many :server_users
@@ -7,5 +9,6 @@ class Server < ActiveRecord::Base
   validates :title, presence: true
   validates :ip_address, presence: true
   validates :company, presence: true
+
 
 end

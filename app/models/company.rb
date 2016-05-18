@@ -3,4 +3,6 @@ class Company < ActiveRecord::Base
   has_many :search_results, as: :searchable
 
   validates :name, presence: true
+
+  scope :search, ->(phrase) { where("name LIKE ?", "%#{phrase}%") }
 end
