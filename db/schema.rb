@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160517182327) do
+ActiveRecord::Schema.define(version: 20160518181936) do
 
   create_table "companies", force: :cascade do |t|
     t.string   "name"
@@ -57,7 +57,7 @@ ActiveRecord::Schema.define(version: 20160517182327) do
   add_index "server_users", ["server_id"], name: "index_server_users_on_server_id"
 
   create_table "servers", force: :cascade do |t|
-    t.string   "title"
+    t.string   "name"
     t.string   "ip_address"
     t.integer  "company_id"
     t.datetime "created_at", null: false
