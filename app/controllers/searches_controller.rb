@@ -9,5 +9,12 @@ class SearchesController < ApplicationController
   end
 
   def create
+    search.save
+  end
+
+  private
+
+  def search_params
+    params.require(:search).permit(:phrase)
   end
 end
