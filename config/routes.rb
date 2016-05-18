@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
 
+
   resources :companies, only: :index
-  root 'companies#index'
+  resources :searches, only: :index
+  root 'searches#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
