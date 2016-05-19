@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160518181936) do
+ActiveRecord::Schema.define(version: 20160519170809) do
 
   create_table "companies", force: :cascade do |t|
     t.string   "name"
@@ -29,22 +29,6 @@ ActiveRecord::Schema.define(version: 20160518181936) do
   end
 
   add_index "company_contacts", ["company_id"], name: "index_company_contacts_on_company_id"
-
-  create_table "search_results", force: :cascade do |t|
-    t.integer  "search_id"
-    t.integer  "searchable_id"
-    t.string   "searchable_type"
-    t.datetime "created_at",      null: false
-    t.datetime "updated_at",      null: false
-  end
-
-  add_index "search_results", ["search_id"], name: "index_search_results_on_search_id"
-
-  create_table "searches", force: :cascade do |t|
-    t.string   "phrase"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
 
   create_table "server_users", force: :cascade do |t|
     t.string   "name"
