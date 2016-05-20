@@ -6,6 +6,6 @@ class Search
   def search_results
     %w(Server Company CompanyContact ServerUser).collect do |search_model|
       search_model.constantize.search phrase
-    end.flatten 
+    end.flatten
   end
 end
