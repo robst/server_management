@@ -10,5 +10,6 @@ class Server < ActiveRecord::Base
   validates :ip_address, presence: true
   validates :company, presence: true
 
+  delegate :company, to: :server, prefix: true
 
 end

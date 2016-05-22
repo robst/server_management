@@ -5,4 +5,8 @@ class Company < ActiveRecord::Base
   validates :name, presence: true
 
   scope :search, ->(phrase) { where("name LIKE ?", "%#{phrase}%") }
+
+  def company
+    self
+  end 
 end

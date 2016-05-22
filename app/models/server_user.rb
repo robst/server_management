@@ -8,4 +8,7 @@ class ServerUser < ActiveRecord::Base
   validates :server, presence: true
   validates :name, presence: true
 
+  def company
+    server_company
+  end
 end
