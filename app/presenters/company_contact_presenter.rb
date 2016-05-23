@@ -1,6 +1,6 @@
 class CompanyContactPresenter < BasePresenter
 
   def display_name
-    "#{model.company_name}: #{name}"
+    company_icon(model.company_name) << user_icon(name)
   end
 end

@@ -1,6 +1,6 @@
 class ServerPresenter < BasePresenter
 
   def display_name
-    "#{model.company_name}: #{name}"
+    company_icon(model.company_name) << server_icon(name)
   end
 end

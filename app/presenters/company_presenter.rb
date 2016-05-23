@@ -1,7 +1,7 @@
 class CompanyPresenter < BasePresenter
 
   def display_name
-    "#{name}"
+    company_icon name
   end
 
 end
