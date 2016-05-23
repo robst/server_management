@@ -1,7 +1,9 @@
 class SearchesController < ApplicationController
   expose :search  
   def index; end
-  def create; end
+  def create
+    search.perform_search! view_context
+  end
 
   private
 
