@@ -1,10 +1,10 @@
 class Company < ActiveRecord::Base
+  include Searchable
+
   has_many :servers
   has_many :search_results, as: :searchable
 
   validates :name, presence: true
-
-  scope :search, ->(phrase) { where("name LIKE ?", "%#{phrase}%") }
 
   def company
     self
