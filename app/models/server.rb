@@ -6,7 +6,7 @@ class Server < ActiveRecord::Base
   has_many :server_users
   has_many :search_results, as: :searchable
 
-  validates :title, presence: true
+  validates :name, presence: true
   validates :ip_address, presence: true
   validates :company, presence: true
 
