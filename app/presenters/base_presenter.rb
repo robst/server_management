@@ -11,20 +11,24 @@ class BasePresenter < SimpleDelegator
 
   private
 
+  def icon name, css_class
+    h.content_tag :span, name, class: "glyphicon glyphicon-#{css_class}"
+  end
+
   def company_icon name
-    h.content_tag :span, name, class: 'glyphicon glyphicon-blackboard'
+    icon name, :blackboard
   end
 
   def user_icon name
-    h.content_tag :span, name, class: 'glyphicon glyphicon-user'
+    icon name, :user
   end
 
   def server_user_icon name
-    h.content_tag :span, name, class: 'glyphicon glyphicon-home'
+    icon name, :home
   end
 
   def server_icon name
-    h.content_tag :span, name, class: 'glyphicon glyphicon-cloud'
+    icon name, :cloud
   end
 
   def h

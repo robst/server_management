@@ -8,5 +8,6 @@ class ServerUser < ActiveRecord::Base
   validates :server, presence: true
   validates :name, presence: true
 
-  delegate :company_name, to: :server
+  delegate :company_name, :company, to: :server
+
 end
