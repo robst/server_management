@@ -1,7 +1,7 @@
 class SearchesController < ApplicationController
-  expose :search  
   def index; end
   def create
+    session[:search] = params[:search]
     search.perform_search! view_context
   end
 
