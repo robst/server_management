@@ -1,5 +1,6 @@
 .row
   .col-xs-6.col-xs-offset-3
+    = display_empty_message results 
     .list-group
     - results.each do |result|
       = link_to result.display_name, result.company, class: 'list-group-item'
