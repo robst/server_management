@@ -8,6 +8,8 @@ RSpec.describe Server, type: :model do
 
     it { is_expected.to validate_presence_of(:name) }
     it { is_expected.to validate_presence_of(:company) }
+    it { is_expected.to validate_presence_of(:ip_address) }
+    it { is_expected.to validate_uniqueness_of(:ip_address) }
   end
 
 end
