@@ -5,8 +5,10 @@ class ServerUser < ActiveRecord::Base
 
   has_many :search_results, as: :searchable
 
-  validates :server, presence: true
-  validates :name, presence: true
+  validates :server,
+    presence: true
+  validates :name,
+    presence: true
 
   delegate :company_name, :company, to: :server
 
