@@ -3,3 +3,8 @@ de:
   searches:
     form:
       search: 'Suchbegriff'
+  activerecord:
+    models:
+      company: 
+        one: Firma
+        other: Firmen
