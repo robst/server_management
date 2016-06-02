@@ -2,7 +2,8 @@
   .col-xs-6.col-xs-offset-3
     = form_for search, remote: true do |f|
       .input-group
+        span.input-group-addon = t('.search')
         = f.text_field :phrase, class: 'form-control', autocomplete: :off
         span.input-group-btn
-          = f.button t('.search'), type: :submit, class: 'btn btn-primary'
+          = f.button bootstrap_icon(:search), type: :submit, class: 'btn btn-primary'
 
