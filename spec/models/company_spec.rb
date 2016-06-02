@@ -12,4 +12,9 @@ RSpec.describe Company, type: :model do
   describe 'methods' do
     it { expect(subject.company).to eq(subject) }
   end
+
+  describe 'module Human' do
+    it { expect(Company.singularize).to eq(Company.model_name.human) }
+    it { expect(Company.pluralize).to eq(Company.model_name.human(count: 2)) }
+  end
 end
