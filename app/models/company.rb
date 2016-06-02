@@ -1,5 +1,6 @@
 class Company < ActiveRecord::Base
   include Searchable
+  include Human
 
   has_many :servers
   has_many :company_contacts
