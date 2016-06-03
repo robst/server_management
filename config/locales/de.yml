@@ -8,3 +8,6 @@ de:
       company: 
         one: Firma
         other: Firmen
+    attributes:
+      company:
+        name: 'Name der Firma'
