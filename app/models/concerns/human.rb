@@ -8,5 +8,9 @@ module Human
     def self.singularize
       model_name.human
     end
+
+    def self.humanize attribute
+      human_attribute_name attribute
+    end
   end
 end
