@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 
 
-  resources :companies, only: [:index, :show, :new]
+  resources :companies
   resources :searches, only: [:index, :create]
   root 'searches#index'
   # The priority is based upon order of creation: first created -> highest priority.
