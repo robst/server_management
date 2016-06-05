@@ -3,6 +3,9 @@ de:
   searches:
     form:
       search: 'Suchbegriff'
+  companies:
+    form:
+      new: 'Neue Firma anlegen'
   activerecord:
     models:
       company: 
