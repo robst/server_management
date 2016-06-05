@@ -2,12 +2,18 @@ class CompaniesController < ApplicationController
   expose :companies, -> { Company.includes(servers: [:server_users]) }
   expose :company
 
-  before_action :save_and_render_on_error!, only: :create
+  before_action :save_and_render_on_error!, only: [:create, :update]
 
   def index; end
   def show; end;
   def new; end;
   def create; end;
+  def edit
+    render :new
+  end
+  def update
+    company.attributes = company_params
+  end
 
   private
 

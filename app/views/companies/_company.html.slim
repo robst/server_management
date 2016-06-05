@@ -1,2 +1,4 @@
 .row id = dom_id(company) 
   .col-xs-6 = company.name
+  .col-xs-2 
+    = link_to bootstrap_icon(:pencil, :yellow), [:edit, company], remote: true
