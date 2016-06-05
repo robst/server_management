@@ -11,3 +11,6 @@ de:
     attributes:
       company:
         name: 'Name der Firma'
+  button:
+    cancel: abbrechen
+    save: speichern
