@@ -3,8 +3,7 @@ class Server < ActiveRecord::Base
 
   belongs_to :company
 
-  has_many :server_users
-  has_many :search_results, as: :searchable
+  has_many :server_users, dependent: :destroy
 
   validates :name,
     presence: true
