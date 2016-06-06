@@ -1,4 +1,4 @@
-$('.container > div:last-child').html '<%=render partial: 'results', 
+$('#content').html '<%=render partial: 'results', 
                                             locals:{  
                                               results: search.search_results 
                                             } %>'
