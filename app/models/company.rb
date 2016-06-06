@@ -9,7 +9,7 @@ class Company < ActiveRecord::Base
     presence: true,
     uniqueness: true
 
-  accepts_nested_attributes_for :servers
+  accepts_nested_attributes_for :servers, :company_contacts
 
   def company
     self
