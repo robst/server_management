@@ -4,7 +4,7 @@ module ApplicationHelper
     content_tag :div, t('empty_collection'), class: 'alert alert-info'
   end
 
-  def bootstrap_icon type, color_class = nil
+  def glyph_icon type, color_class = nil
     content_tag :span, nil, class: "glyphicon glyphicon-#{type} #{color_class}"
   end
 
