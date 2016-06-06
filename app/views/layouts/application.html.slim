@@ -10,6 +10,6 @@ html
     = render partial: 'shared/navigation'
     .container
       = render partial: 'searches/form'
-      div
+      #content
         = yield
     #modal.modal[tabindex="-1" role="dialog"]
