@@ -1,2 +1,4 @@
 = modal_form company, title: t('.new') do |f| 
   = f.input :name
+  = f.fields_for :company_contacts do |cc|
+    = render partial: 'company_contacts/form_fields', locals: { form: cc }  
