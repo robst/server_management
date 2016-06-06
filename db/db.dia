@@ -28,7 +28,7 @@
           <dia:boolean val="false"/>
         </dia:attribute>
         <dia:attribute name="scaling">
-          <dia:real val="0.56768375635147095"/>
+          <dia:real val="0.55262118577957153"/>
         </dia:attribute>
         <dia:attribute name="fitto">
           <dia:boolean val="true"/>
@@ -822,7 +822,7 @@
         <dia:point val="54.3451,-23.4575"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="54.3451,-23.4575;65.2701,-16.7575"/>
+        <dia:rectangle val="54.3451,-23.4575;66.4251,-16.7575"/>
       </dia:attribute>
       <dia:attribute name="meta">
         <dia:composite type="dict"/>
@@ -831,7 +831,7 @@
         <dia:point val="54.3451,-23.4575"/>
       </dia:attribute>
       <dia:attribute name="elem_width">
-        <dia:real val="10.925000000000001"/>
+        <dia:real val="12.08"/>
       </dia:attribute>
       <dia:attribute name="elem_height">
         <dia:real val="6.6999999999999993"/>
@@ -927,7 +927,7 @@
         </dia:composite>
         <dia:composite type="table_attribute">
           <dia:attribute name="name">
-            <dia:string>#telefonnumber#</dia:string>
+            <dia:string>#telephone_number#</dia:string>
           </dia:attribute>
           <dia:attribute name="type">
             <dia:string>#varchar(255)#</dia:string>
