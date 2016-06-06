@@ -3,7 +3,7 @@ class Company < ActiveRecord::Base
   include Human
 
   has_many :servers, dependent: :destroy, inverse_of: :company
-  has_many :company_contacts, dependent: :destroy
+  has_many :company_contacts, dependent: :destroy, inverse_of: :company
 
   validates :name, 
     presence: true,
