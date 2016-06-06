@@ -1,5 +1,5 @@
 .modal-dialog[role="document"]
-  = form_for object, remote: true, class: 'form-horizontal' do |form|
+  = simple_form_for object, remote: true, class: 'form-horizontal' do |form|
     .modal-content
       = modal_header options[:title]
       .modal-body
