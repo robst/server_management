@@ -1,8 +1,7 @@
-.panel.panel-default
-  .panel-body
-    .row
-      .col-xs-6 = Company.humanize 'name' 
-      .col-xs-2.col-xs-offset-2 
-        = link_to bootstrap_icon(:plus, :green), :new_company, remote: true
-    ul.list-unstyled#companies
-      = render companies
+= panelize(title: Company.pluralize) do
+  .row
+    .col-xs-6 = Company.humanize 'name' 
+    .col-xs-2.col-xs-offset-2 
+      = link_to bootstrap_icon(:plus, :green), :new_company, remote: true
+  ul.list-unstyled#companies
+    = render companies

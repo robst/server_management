@@ -22,4 +22,11 @@ module ApplicationHelper
       yield form
     end
   end
+
+  def panelize options, &block
+    options.merge(title:'')
+    render layout: 'shared/panel', locals: {options: options } do
+      yield
+    end
+  end
 end
