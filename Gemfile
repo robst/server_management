@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'decent_exposure', '3.0.0.beta2'
+gem 'simple_form'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.6'
 gem 'rails-i18n', '~> 4.0.0'
